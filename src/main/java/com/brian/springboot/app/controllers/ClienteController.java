@@ -38,7 +38,7 @@ public class ClienteController {
 		return "listar";
 	}
 
-	@RequestMapping(value = "/form")
+	@RequestMapping(value = {"/form", "/", "home"})
 	public String crear(Map<String, Object> model) {
 
 		Cliente cliente = new Cliente();
